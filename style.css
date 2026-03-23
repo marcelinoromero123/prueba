@@ -1,0 +1,64 @@
+/* RESET GENERAL */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: #000000; /* Fondo negro puro */
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* HEADER Y BUSCADOR */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #000;
+    border-bottom: 2px solid #333;
+}
+
+.logo-container { display: flex; align-items: center; gap: 15px; }
+.logo-img { width: 60px; }
+.logo-text { font-size: 2.5rem; letter-spacing: 2px; }
+
+/* El buscador con el estilo de tu dibujo */
+.search-bar {
+    display: flex;
+    border: 3px solid white; /* El trazo blanco grueso */
+    border-radius: 15px;      /* Esquinas redondeadas */
+    padding: 5px 15px;
+    width: 400px;
+}
+
+.search-bar input {
+    background: transparent;
+    border: none;
+    color: white;
+    width: 100%;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+/* GRID DE JUEGOS (Estilo 1001 juegos) */
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+.game-card {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.game-card:hover { transform: scale(1.1); } /* Se agranda al pasar el ratón */
+
+.game-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Cuadrados perfectos */
+    border-radius: 12px;
+    background-color: #333; /* Color mientras carga la foto */
+}
